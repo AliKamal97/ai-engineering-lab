@@ -1,10 +1,13 @@
 [project]
 name = "ai-engineering-lab"
 version = "0.1.0"
+description = "Day 1 website briefings with Gemini, following an LLM engineering course"
 requires-python = ">=3.12"
 dependencies = [
+    "beautifulsoup4>=4.12",
     "openai>=3.55.1",
     "python-dotenv>=1.2.4",
+    "requests>=2.32",
 ]
 
 [dependency-groups]
