@@ -53,7 +53,7 @@ class Endpoint(BaseHTTPRequestHandler):
         self.wfile.write(json.dumps(result).encode("utf-8"))
 
 
-class Day1IntegrationTests(unittest.TestCase):
+class BriefingIntegrationTests(unittest.TestCase):
     def setUp(self):
         self.server = ThreadingHTTPServer(("127.0.0.1", 0), Endpoint)
         self.server.downloads = 0
